@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>proffessional resume</title>
+	<script src="https://kit.fontawesome.com/78350cca92.js" crossorigin="anonymous"></script>
+	<style type="text/css" lang="javascript">
+		body{
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+		.navbar{
+			background-color: lightgray;
+			height: 80px;
+			position: -webkit-sticky;
+  			position: sticky;
+  			top: 0;
+		}
+		.navbar ul{
+			float: right;
+			padding-top: 15px;
+		}
+		.navbar li{
+			text-decoration: none;
+			color: black;
+			padding-right: 20px;
+			font-size: 20px;
+			font-family: "helvetica" , sans-serif;
+			cursor: pointer;
+		}
+		.navbar li:hover{
+			color: whitesmoke;
+		}
+		.intro{
+			margin-bottom: 150px;
+		}
+		.intro img{
+			float: left;
+			width: 700px;
+			height: 600px;
+		}
+		.desc{
+			padding-top: 150px;
+			margin-bottom: 50px;
+		}
+		.hello{
+			font-family: "lucida console", monospace;
+			font-size: x-large;
+		}
+		.name{
+			font-family: "georgia", serif;
+			font-size: 40px;
+			font-style: bold;
+			font-weight: 900;
+
+		}
+		.role{
+			padding-top: -30px;
+			font-family: "Times New Roman", serif;
+			font-size: 20px;
+		}
+		a{
+			text-decoration: none;
+			font-size: 20px;
+			color: black;
+			padding-right: 10px;
+			
+		}
+		li{
+			display: inline;
+		}
+		.contact{
+			border: 0.5px solid lightsteelblue;
+			padding: 10px 15px;
+			border-radius: 25px;
+			background-color: lightsteelblue;
+		}
+		
+		.about{
+			float: right;
+			border: 1px solid lightgrey;
+			margin-top: 50px;
+			margin-left: 50px;
+			margin-right: 50px;
+			padding: 15px;
+			padding-left: 25px;
+			margin-bottom: 100px;
+			background-color: lightgrey;
+			box-shadow: 5px 5px 5px 5px dimgrey;
+		}
+		.about img{
+			float: right;
+			width: 300px;
+			height: 350px;
+			border-radius: 25px;
+		}
+		.about_name{
+			font-size: 35px;
+			font-family: "Times New Roman", serif;
+			font-weight: strong;
+		}
+		.about_myself{
+			font-size: 20px;
+			font-family: "Courier New",monospace;
+			width: 70%;
+
+		}
+		.about pre{
+			font-size: 20px;
+			font-family: "Veranda",sans-serif;
+		}
+		.skills{
+			border: 1px solid lightgrey;
+			margin-left: 50px;
+			margin-right: 50px;
+			margin-bottom: 100px;
+			margin-top: 700px;
+			height: 400px;
+			padding: 25px;
+			background-color: lightgrey;
+			box-shadow: 5px 5px 5px 5px dimgrey;
+		}
+		.skills h1{
+			font-size: 30px;
+			font-family: "Lucida Console",monospace;
+			font-weight: 100;
+			padding: 10px;
+			padding-bottom: 20px;
+		}
+		.progressbar{
+			display: flex;
+		}
+		.pgbar{
+			width: 50%;
+			padding-left: 10px;
+			font-family: "Lucida Hnadwriting",cursive;
+			padding-bottom: 30px;
+			padding-right: 10px;
+		}
+		.pgborder{
+			border: 0.5px solid black;
+			margin-top: 10px;
+		}
+		.pgborder div{
+			font-size: 18px;
+			text-align: center;
+			font-family: "Courier New", monospace;
+		}
+		.pglength{
+			height: 24px;
+		}
+		.portfolio{
+			margin-left: 50px;
+			margin-right: 50px;
+			border: 0.5px solid lightgrey;
+			background-color: lightgrey;
+			box-shadow: 5px 5px 5px 5px dimgrey;
+			margin-bottom: 100px;
+		}
+		.portfolio .port_tittle{
+			font-size: 30px;
+			font-family: "Lucida Console",monospace;
+			font-weight: 100;
+			padding: 35px;
+			padding-bottom: 20px;
+		}
+		.port1, .port3, .port5{
+			padding: 35px;
+		}
+		.port1 img, .port3 img, .port5 img{
+			float: left;
+			padding-right: 20px;
+		}
+		.port1 h2,.port3 h2,.port5 h2{
+			padding-left: 10px;
+			padding-top: 30px;
+		}
+		.port1 p,.port3 p,.port5 p{
+			font-size: 20px;
+			padding-bottom: 10px;
+		}
+		.port2, .port4{
+			padding: 35px;
+		}
+		.port2 img, .port4 img{
+			float: right;
+			padding-left: 20px;
+		}
+		.port2 h2, .port4 h2{
+			padding-right: 10px;
+			padding-top: 30px;
+		}
+		.port2 p, .port4 p{
+			font-size: 20px;
+			padding-bottom: 10px;
+		}
+		.port2 h2{
+			padding-top: 40px;
+		}
+		.port3 h2{
+			padding-top: 60px;
+		}
+		.port4 h2{
+			padding-top: 40px;
+		}
+		.port5 h2{
+			padding-top: 40px;
+		}
+		.port5 p{
+			padding-bottom: 50px;
+		}
+		.education{
+			margin-left: 50px;
+			margin-right: 50px;
+			border: 0.5px solid lightgrey;
+			background-color: lightgrey;
+			box-shadow: 5px 5px 5px 5px dimgrey;
+			margin-bottom: 100px;
+		}
+		.edu_tittle{
+			font-size: 30px;
+			font-family: "Lucida Console",monospace;
+			font-weight: 100;
+			padding: 35px;
+			padding-bottom: 20px;
+		}
+		.circlestyle{
+			content: " ";
+			display: inline-block;
+			background-color: #fff;
+			border-radius: 100%;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border: 5px solid sandybrown;
+			z-index: 2;
+			margin-left: 35px;
+			margin-right: 20px;
+			float: left;
+		}
+		.cllg_name{
+			font-size: 20px;
+			font-family: "Verdana",sans-serif;
+		}
+		.cllg_name span{
+			font-size: 20px;
+			font-family: "Garamond",serif;
+		}
+		.border_left{
+			border-left: 3px solid whitesmoke;
+			height: 80px;
+			margin-left: 48px;
+			float: left;
+			margin-right: 30px;
+		}
+		.academicyear{
+			font-size: 15px;
+			padding-top: 5px;
+			font-family: "Monaco",monospace;
+			padding-bottom: 10px;
+		}
+		.academicyear_desc{
+			font-size: 15px;
+			font-family: "Monaco",monospace;
+			padding-bottom: 50px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="navbar">
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#education">Education</a></li>
+			</ul>
+		</div>
+	<header>
+		
+		<div class="intro">
+			<img src="./images/headerimage.jpg" alt="image" >
+			<div class="desc">
+				<p class="hello">HELLO !</p>
+				<p class="name"> I'm Jeetendra Madrecha</p>
+				<p class="role">Web Developer</p>
+				<ul>
+					<li><a href="#" class="fab fa-github"></a></li>
+					<li><a href="#" class="fab fa-twitter"></a></li>
+					<li><a href="#" class="fab fa-facebook"></a></li>
+					<li><a href="#" class="fab fa-linkedin"></a></li>
+					<li><a href="#" class="fab fa-instagram"></a></li>
+				</ul>
+			</div>
+			<a href="#" class="contact">Get in Touch <i class="fas fa-arrow-right"></i></a>
+		</div>
+	</header>
+	<body>
+		<div class="detailintro" id="about">
+			<div class="about" >
+				<img src="./images/my.jpg" alt="profile image">
+				<p class="about_name">Hello! I'm Jeetendra Madrecha</p>
+				<p class="about_myself">I am currently pursuing Bachelor of Engineering in Computer Science .I am passionate about web developement. I am intermidiate front-end developer .I am a quick learner and a team person that get's the job done.</p>
+				<pre>Email     :  jatinmadrecha04@gmail.com</pre>
+				<pre>Phone    : +91 8320033454</pre>
+				<pre>Address :  Gujarat,India</pre>
+				
+			</div>
+		</div>
+		<div class="skills" id="skills">
+			<h1> Professional Skills</h1>
+			<div class="progressbar">
+				<div class="pgbar">HTML
+					<div class="pgborder">
+						<div class="pglength" style="width: 80%; background-color: red;">Advance</div>
+					</div>
+				</div>
+				<div class="pgbar">CSS
+					<div class="pgborder">
+						<div class="pglength" style="width: 70%; background-color: red;">Advance</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="progressbar">
+				<div class="pgbar">C
+					<div class="pgborder">
+						<div class="pglength" style="width: 50%; background-color: blue;">Intermidiate</div>
+					</div>
+				</div>
+				<div class="pgbar">PYTHON
+					<div class="pgborder">
+						<div class="pglength" style=" width: 50%; background-color: blue;">Intermidiate</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="progressbar">
+				<div class="pgbar">JAVA
+					<div class="pgborder" >
+						<div class="pglength" style=" width: 50%; background-color: blue;">Intermidiate</div>
+					</div>
+				</div>
+				<div class="pgbar">JAVASCRIPT
+					<div class="pgborder" >
+						<div class="pglength" style=" width: 20%; background-color: violet;">Beginner</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio" id="portfolio">
+			<p class="port_tittle">Portfolio</p>
+			<div class="port1">
+				<img src="./images/farmer.jpg" style="height: 300px; width: 50%;">
+				<h2>Farmer E-commerce Website</h2>
+				<p>The project aim to help farmer as well as customer for buying and selling agriculture products directly on a same platform.Delivered codebase in Html, Css, Javascript and Sql database.</p>
+
+			</div>
+			<div class="port2">
+				<img src="./images/turf.png" style="height: 300px; width: 50%;">
+				<h2>Turf Booking System</h2>
+				<p>We have created GUI based application to book turf in an easy and efficient way using tkinter,python library with creating database using MySQL Database connectivity</p>
+
+			</div>
+			<div class="port3">
+				<img src="./images/cybercafe.jpg" style="height: 300px; width: 50%;">
+				<h2>Cyber Cafe Managment System</h2>
+				<p>Managment application in which admin can view/add/delete member of cafe. It stores the data in the database and can access it and modify it.Application saves the session of user for future case enquiry. This managment system was desgines using Java and SQL.</p>
+
+			</div>
+			<div class="port4">
+				<img src="./images/hotel.jpg" style="height: 300px; width: 50%;">
+				<h2>Hotel Billing System</h2>
+				<p>It is command line application using C to choose items from a menu and generate the necesary bill. It contain admin login through which you can alter items in menu. This was developed using C language.</p>
+			</div>
+			<div class="port5">
+				<img src="./images/ticket.jpg" style="height: 300px; width: 50%;">
+				<h2>Booking tickets through facial recognition</h2>
+				<p>This project was a base model in which passenger can issue ticket normally by standing in-front of camera and entering the destination.Futuristic scope ofthis project was to identify people without tickets through cctv and other gadgets. This was developed using Python , python library called open cv and GUI using tkinter.</p>
+			</div>
+		</div>
+		<div class="education" id="education">
+			<p class="edu_tittle">Education</p>
+			<div class="cllgdetails">
+				<div class="circlestyle"></div>
+				<div class="cllg_name"> Bachelors of Technology <span>from Rajiv Gandhi Institute of Technology</span></div><br>
+				<div class="border_left"></div>
+				<div class="academicyear">2018 - 2022</div>
+				<div class="academicyear_desc"> I am currently studying Computer Science Engineering. </div>
+			</div>
+			<div class="cllgdetails">
+				<div class="circlestyle"></div>
+				<div class="cllg_name"> Science and Mathematics<span> from Metas Adventist School</span></div><br>
+				<div class="border_left"></div>
+				<div class="academicyear">2006 - 2018</div>
+				<div class="academicyear_desc"> Pursued and gained the knowledge of Science and completed my primeary and higher secondary.</div>
+			</div>
+		</div>
+	</body>
+</body>
+</html>
